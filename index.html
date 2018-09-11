@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./image/Frutería.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- [if it IE 9]
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ie8/0.8.1/ie8.js"></script> -->
@@ -24,8 +25,8 @@
             <a class="navbar-brand" href="#">
                 <img src="./image/Frutería.png" width="30" height="30" class="d-inline-block align-top" alt=""> Mi_Web
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -38,8 +39,8 @@
                         <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
                             Dropdown
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -73,7 +74,8 @@
                     <div class="card-header">Header</div>
                     <div class="card-body">
                         <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
                             card's content.
                         </p>
                     </div>
@@ -82,7 +84,8 @@
                     <div class="card-header">Header</div>
                     <div class="card-body">
                         <h5 class="card-title">Secondary card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
                             card's content.
                         </p>
                     </div>
@@ -91,7 +94,8 @@
                     <div class="card-header">Header</div>
                     <div class="card-body">
                         <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
                             card's content.</p>
                     </div>
                 </div>
@@ -101,7 +105,8 @@
 
                 <div class="jumbotron">
                     <h1 class="display-4">Mi primera página web</h1>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatibus, magni
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatibus,
+                        magni
                         aut molestias nemo aliquam ex quas animi ut.</p>
                     <hr class="my-4">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, exercitationem.</p>
@@ -136,17 +141,36 @@
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large red">
+                    <i class="large material-icons">mode_edit</i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                    <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                </ul>
+            </div>
         </div>
         <div class="card-footer text-muted">
             2 days ago
         </div>
+
     </div>
 
     <!-- Fin Footer -->
 
-<!-- Código realizado por @Juan_pedraza -->
+    <!-- Código realizado por @Juan_pedraza -->
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems);
+        });
+    </script>
 </body>
 
 </html>
